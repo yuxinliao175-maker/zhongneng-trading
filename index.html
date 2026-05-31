@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liling Zhongneng Trading Co., Ltd. - Insulators, LCD Displays, Porcelain &amp; Auto Parts</title>
-    <meta name="description" content="Liling Zhongneng Trading Co., Ltd. - Professional supplier of high-voltage insulators, LCD displays, porcelain, and motorcycle piston rings. Export quality from China.">
+    <title>Liling Zhongneng Trading Co., Ltd. - Insulators, LCD Displays, Porcelain &amp; Piston Rings</title>
+    <meta name="description" content="Liling Zhongneng Trading Co., Ltd. - Based in Liling, China's insulator &amp; porcelain capital. Exporting high-voltage insulators, LCD displays, porcelain dinnerware, and motorcycle piston rings worldwide.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
@@ -24,13 +24,24 @@
         .hero { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: #fff; padding: 100px 0 80px; }
         .hero h1 { font-size: 48px; font-weight: 800; line-height: 1.2; margin-bottom: 20px; }
         .hero h1 span { color: #e63946; }
-        .hero p { font-size: 18px; color: #b0b0c8; max-width: 640px; margin-bottom: 32px; }
+        .hero p { font-size: 18px; color: #b0b0c8; max-width: 720px; margin-bottom: 32px; }
         .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
         .btn { display: inline-block; padding: 12px 32px; border-radius: 8px; font-size: 15px; font-weight: 600; text-decoration: none; transition: all 0.2s; }
         .btn-primary { background: #e63946; color: #fff; }
         .btn-primary:hover { background: #c5303c; }
         .btn-outline { border: 2px solid rgba(255,255,255,0.3); color: #fff; }
         .btn-outline:hover { border-color: #e63946; }
+
+        /* Liling Highlight Section */
+        .liling-banner { background: linear-gradient(135deg, #fff8f0 0%, #fef3e9 100%); padding: 60px 0; border-bottom: 3px solid #e63946; }
+        .liling-banner h2 { font-size: 36px; font-weight: 800; text-align: center; margin-bottom: 12px; color: #1a1a2e; }
+        .liling-banner .subtitle { text-align: center; color: #e63946; font-weight: 600; font-size: 18px; margin-bottom: 32px; }
+        .liling-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+        .liling-card { background: #fff; border-radius: 16px; padding: 36px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
+        .liling-card h3 { font-size: 24px; font-weight: 700; margin-bottom: 12px; }
+        .liling-card h3 .icon { margin-right: 8px; }
+        .liling-card p { font-size: 15px; color: #555; line-height: 1.8; }
+        .liling-card .highlight { color: #e63946; font-weight: 700; }
 
         /* Products */
         .section { padding: 80px 0; }
@@ -43,6 +54,7 @@
         .product-card h3 { font-size: 20px; font-weight: 700; margin-bottom: 10px; }
         .product-card p { font-size: 14px; color: #666; line-height: 1.7; margin-bottom: 16px; }
         .product-card .tag { display: inline-block; background: #f0f0f5; color: #555; font-size: 12px; padding: 4px 12px; border-radius: 20px; margin-right: 6px; margin-bottom: 6px; }
+        .product-card .region-badge { display: inline-block; background: #e63946; color: #fff; font-size: 11px; padding: 2px 10px; border-radius: 20px; margin-bottom: 10px; font-weight: 600; }
 
         /* Why Us */
         .why-us { background: #fff; }
@@ -62,19 +74,13 @@
         .contact-whatsapp { display: inline-flex; align-items: center; gap: 8px; background: #25D366; color: #fff; padding: 14px 28px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 15px; margin-top: 12px; transition: background 0.2s; }
         .contact-whatsapp:hover { background: #20bd5a; }
 
-        /* Products detail page */
-        .product-detail { padding: 80px 0; }
-        .product-detail h2 { font-size: 28px; margin-bottom: 24px; }
-        .product-detail ul { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-        .product-detail ul li::before { content: "✅ "; }
-
         /* Footer */
         footer { background: #111; color: #888; padding: 32px 0; font-size: 13px; text-align: center; }
 
         /* Responsive */
         @media (max-width: 768px) {
             .hero h1 { font-size: 32px; }
-            .contact-grid { grid-template-columns: 1fr; }
+            .contact-grid, .liling-grid { grid-template-columns: 1fr; }
             nav a { margin-left: 16px; font-size: 13px; }
             .products-grid { grid-template-columns: 1fr; }
         }
@@ -85,8 +91,8 @@
         <div class="container">
             <a href="/" class="logo">中能<span>贸易</span></a>
             <nav>
+                <a href="#about">Liling Advantage</a>
                 <a href="#products">Products</a>
-                <a href="#about">About</a>
                 <a href="#contact">Contact</a>
             </nav>
         </div>
@@ -95,11 +101,39 @@
     <!-- Hero -->
     <section class="hero">
         <div class="container">
-            <h1>Your Reliable Export Partner<br>from <span>China</span></h1>
-            <p>Liling Zhongneng Trading Co., Ltd. supplies high-quality insulators, LCD displays, porcelain ware, and motorcycle piston rings to global markets. Factory-direct pricing, rigorous quality control.</p>
+            <h1>Your Reliable Export Partner<br>from <span>Liling, China</span></h1>
+            <p>Headquartered in Liling, Hunan — the world-renowned manufacturing hub for <strong>high-voltage insulators</strong> and <strong>fine porcelain</strong>. We leverage a century of industrial heritage to deliver quality products at factory-direct prices.</p>
             <div class="hero-btns">
                 <a href="#products" class="btn btn-primary">Explore Products</a>
                 <a href="#contact" class="btn btn-outline">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Liling Highlight -->
+    <section class="liling-banner" id="about">
+        <div class="container">
+            <h2>Made in Liling — A Legacy of Quality</h2>
+            <div class="subtitle">⚡ The Insulator &amp; Porcelain Capital of China</div>
+            <div class="liling-grid">
+                <div class="liling-card">
+                    <h3><span class="icon">⚡</span>Liling — Global Insulator Hub</h3>
+                    <p>
+                        Liling is home to <strong class="highlight">Huaxin Electrical</strong>, one of the world's leading high-voltage insulator manufacturers supplying to <strong class="highlight">Siemens</strong> and major grid operators worldwide. The city produces over <strong class="highlight">60% of China's porcelain insulators</strong> and hosts hundreds of specialized insulator factories serving the global power transmission industry.
+                    </p>
+                    <p style="margin-top: 12px;">
+                        From suspension and pin-type insulators to custom post insulators and transformer bushings, Liling's manufacturing ecosystem combines <strong class="highlight">100+ years of ceramic craftsmanship</strong> with modern production lines. Our supply chain is built on this same industrial cluster — meaning the <strong class="highlight">same raw materials, same skilled workforce, and the same quality standards</strong>.
+                    </p>
+                </div>
+                <div class="liling-card">
+                    <h3><span class="icon">🏺</span>Liling — China's Porcelain Capital</h3>
+                    <p>
+                        Liling has been producing fine porcelain for over <strong class="highlight">2,000 years</strong>, dating back to the Han Dynasty. Together with Jingdezhen, Liling is revered as one of China's two great porcelain cities. Today, it remains the <strong class="highlight">largest daily-use porcelain production base in China</strong>, exporting to supermarkets, hotels, and distributors across the globe.
+                    </p>
+                    <p style="margin-top: 12px;">
+                        Our porcelain products — from bone china dinner sets to hotel-grade stoneware — are <strong class="highlight">kiln-fired at over 1,300°C</strong> using locally sourced, mineral-rich clay. Every piece reflects the artistry and technical mastery that has made <strong class="highlight">"Liling Porcelain"</strong> a trusted brand worldwide. Whether you need stock designs or custom OEM, we deliver quality that competes with the finest ceramic traditions.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -108,69 +142,79 @@
     <section class="section" id="products">
         <div class="container">
             <h2 class="section-title">Our Products</h2>
-            <p class="section-sub">Four product lines serving diverse industries worldwide</p>
+            <p class="section-sub">Leveraging Liling's industrial heritage across four product lines</p>
             <div class="products-grid">
                 <div class="product-card">
                     <div class="icon">⚡</div>
+                    <span class="region-badge">🏭 Made in Liling</span>
                     <h3>High-Voltage Insulators</h3>
-                    <p>Glass, composite (silicone rubber), and porcelain insulators for power transmission lines, substations, and distribution networks.</p>
-                    <span class="tag">Glass Insulator</span>
-                    <span class="tag">Composite Insulator</span>
-                    <span class="tag">Porcelain Insulator</span>
+                    <p>Custom-manufactured to your drawings. Suspension, pin-type, post insulators, and transformer bushings — from the same industrial cluster as Huaxin.</p>
+                    <span class="tag">Custom Manufacturing</span>
+                    <span class="tag">Suspension Insulator</span>
+                    <span class="tag">Pin-Type</span>
+                    <span class="tag">Post Insulator</span>
+                    <span class="tag">Transformer Bushing</span>
                 </div>
                 <div class="product-card">
                     <div class="icon">🖥️</div>
-                    <h3>LCD Display Panels</h3>
-                    <p>TFT LCD panels from 1.44" to 21.5", industrial monitors, and custom display solutions for OEM/ODM clients.</p>
-                    <span class="tag">TFT LCD</span>
-                    <span class="tag">Industrial Monitor</span>
-                    <span class="tag">Custom Display</span>
+                    <h3>TFT LCD Display Panels</h3>
+                    <p>Custom TFT LCD from 1.3" to 10.1". RGB/MIPI/MCU/LVDS interfaces. FHD and below. We work from your drawings and interface specs.</p>
+                    <span class="tag">1.3"-10.1" TFT LCD</span>
+                    <span class="tag">RGB / MIPI / MCU</span>
+                    <span class="tag">LVDS</span>
+                    <span class="tag">Custom Design</span>
+                    <span class="tag">OEM/ODM</span>
                 </div>
                 <div class="product-card">
                     <div class="icon">🏺</div>
-                    <h3>Porcelain &amp; Ceramics</h3>
-                    <p>Fine dinnerware, hotel-grade porcelain, and custom ceramic products for supermarkets, hotels, and distributors.</p>
-                    <span class="tag">Dinnerware</span>
+                    <span class="region-badge">🏭 Made in Liling</span>
+                    <h3>Porcelain &amp; Dinnerware</h3>
+                    <p>Fine bone china, hotel-grade porcelain, and custom ceramic products — from the heart of China's porcelain capital, with 2,000 years of ceramic heritage.</p>
+                    <span class="tag">Bone China</span>
                     <span class="tag">Hotel Porcelain</span>
-                    <span class="tag">Custom Design</span>
+                    <span class="tag">Dinnerware Set</span>
+                    <span class="tag">Custom Logo</span>
+                    <span class="tag">Gift Box Packaging</span>
                 </div>
                 <div class="product-card">
                     <div class="icon">🏍️</div>
                     <h3>Motorcycle Piston Rings</h3>
-                    <p>High-performance piston rings for motorcycles, compatible with major engine brands. Also supply auto dashcams.</p>
-                    <span class="tag">Piston Rings</span>
-                    <span class="tag">Motorcycle Parts</span>
-                    <span class="tag">Dashcam</span>
+                    <p>High-quality piston rings for motorcycles. Available in cast iron, alloy steel, chrome-plated, and PVD-coated. Standard and custom sizes.</p>
+                    <span class="tag">Compression Ring</span>
+                    <span class="tag">Oil Ring</span>
+                    <span class="tag">Cast Iron / Steel</span>
+                    <span class="tag">Custom Sizes</span>
+                    <span class="tag">OEM Available</span>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Why Us -->
-    <section class="section why-us" id="about">
+    <section class="section why-us">
         <div class="container">
-            <h2 class="section-title">Why Choose Us</h2>
-            <p class="section-sub">Built on trust, driven by quality</p>
+            <h2 class="section-title">Why Source from Liling?</h2>
+            <p class="section-sub">The advantages of working with an export partner in China's industrial heartland</p>
             <div class="features">
                 <div class="feature">
-                    <div class="num">10+</div>
-                    <h4>Years Experience</h4>
-                    <p>Deep industry knowledge in export trading across four product categories.</p>
+                    <div class="num">100+</div>
+                    <h4>Years of Insulator Heritage</h4>
+                    <p>Liling has been manufacturing insulators and ceramics for over a century. The expertise is built into every product.</p>
                 </div>
                 <div class="feature">
-                    <div class="num">30+</div>
-                    <h4>Export Countries</h4>
-                    <p>Serving clients across Asia, Europe, Africa, and the Americas.</p>
-                </div>
-                <div class="feature">
-                    <div class="num">100%</div>
-                    <h4>Quality Inspection</h4>
-                    <p>Every shipment undergoes rigorous quality check before dispatch.</p>
+                    <div class="num">60%</div>
+                    <h4>China's Porcelain Insulators</h4>
+                    <p>Over 60% of China's porcelain insulators are produced in Liling. The city is the undisputed industry capital.</p>
                 </div>
                 <div class="feature">
                     <div class="num">✓</div>
-                    <h4>Factory Direct</h4>
-                    <p>Competitive pricing without middlemen. Flexible MOQ for trial orders.</p>
+                    <h4>Custom Manufacturing</h4>
+                    <p>Have a drawing? We can make it. From insulators to LCD panels, we specialize in custom OEM production.</p>
+                </div>
+                <div class="feature">
+                    <div class="num">🚢</div>
+                    <h4>Factory-Direct Pricing</h4>
+                    <p>No middlemen. Direct from Liling's factory cluster to your port. Flexible MOQ for trial orders welcome.</p>
                 </div>
             </div>
         </div>
@@ -182,26 +226,26 @@
             <div class="contact-grid">
                 <div>
                     <h2>Get In Touch</h2>
-                    <p>Ready to source quality products from China? We're here to help. Send us a message and we'll get back to you within 24 hours.</p>
+                    <p>Ready to source from Liling, China? We're here to help. Send us your inquiry and we'll get back to you within 24 hours.</p>
                     <ul class="contact-info">
                         <li><strong>Company</strong> Liling Zhongneng Trading Co., Ltd.</li>
                         <li><strong>Contact</strong> Liao Yuxin</li>
                         <li><strong>Phone</strong> +86 182-7324-3295</li>
                         <li><strong>Email</strong> liaoyux1688@hotmail.com</li>
                         <li><strong>Email</strong> yuxinliao175@gmail.com</li>
-                        <li><strong>Address</strong> Changqing Street, Liling, Hunan, China</li>
+                        <li><strong>Address</strong> Changqing St., Liling, Hunan, China</li>
                     </ul>
                     <a href="https://wa.me/8613714898482" class="contact-whatsapp" target="_blank">💬 WhatsApp: +86 137 1489 8482</a>
                 </div>
                 <div>
-                    <h2>Products We Supply</h2>
-                    <p>Detailed product specifications available upon request. We can provide:</p>
+                    <h2>How We Work</h2>
+                    <p>Simple and transparent process:</p>
                     <ul class="contact-info" style="margin-top: 16px;">
-                        <li>✅ Product catalogs with full specifications</li>
-                        <li>✅ Factory test reports &amp; certifications</li>
-                        <li>✅ Free samples for evaluation</li>
-                        <li>✅ Custom OEM/ODM solutions</li>
-                        <li>✅ Competitive FOB/CIF pricing</li>
+                        <li>1️⃣ You share your inquiry or drawing</li>
+                        <li>2️⃣ We reply with quote and lead time within 24h</li>
+                        <li>3️⃣ Samples available for evaluation</li>
+                        <li>4️⃣ Mass production with inspection photos/videos</li>
+                        <li>5️⃣ Shipment by sea, air, or express</li>
                     </ul>
                 </div>
             </div>
@@ -210,7 +254,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 Liling Zhongneng Trading Co., Ltd. All rights reserved.</p>
+            <p>&copy; 2026 Liling Zhongneng Trading Co., Ltd. | Based in Liling, Hunan, China</p>
         </div>
     </footer>
 </body>
