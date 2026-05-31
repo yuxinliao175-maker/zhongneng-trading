@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liling Zhongneng Trading Co., Ltd. - Insulators, LCD Displays, Porcelain &amp; Auto Parts</title>
+    <meta name="description" content="Liling Zhongneng Trading Co., Ltd. - Professional supplier of high-voltage insulators, LCD displays, porcelain, and motorcycle piston rings. Export quality from China.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, sans-serif; color: #1a1a2e; background: #f8f9fa; line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+        /* Header */
+        header { background: #fff; border-bottom: 1px solid #e8e8e8; position: sticky; top: 0; z-index: 100; }
+        header .container { display: flex; justify-content: space-between; align-items: center; height: 72px; }
+        .logo { font-size: 20px; font-weight: 800; color: #1a1a2e; text-decoration: none; }
+        .logo span { color: #e63946; }
+        nav a { margin-left: 28px; text-decoration: none; color: #555; font-size: 14px; font-weight: 500; transition: color 0.2s; }
+        nav a:hover { color: #e63946; }
+
+        /* Hero */
+        .hero { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: #fff; padding: 100px 0 80px; }
+        .hero h1 { font-size: 48px; font-weight: 800; line-height: 1.2; margin-bottom: 20px; }
+        .hero h1 span { color: #e63946; }
+        .hero p { font-size: 18px; color: #b0b0c8; max-width: 640px; margin-bottom: 32px; }
+        .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
+        .btn { display: inline-block; padding: 12px 32px; border-radius: 8px; font-size: 15px; font-weight: 600; text-decoration: none; transition: all 0.2s; }
+        .btn-primary { background: #e63946; color: #fff; }
+        .btn-primary:hover { background: #c5303c; }
+        .btn-outline { border: 2px solid rgba(255,255,255,0.3); color: #fff; }
+        .btn-outline:hover { border-color: #e63946; }
+
+        /* Products */
+        .section { padding: 80px 0; }
+        .section-title { font-size: 32px; font-weight: 800; text-align: center; margin-bottom: 12px; }
+        .section-sub { text-align: center; color: #777; margin-bottom: 48px; font-size: 16px; }
+        .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; }
+        .product-card { background: #fff; border-radius: 16px; padding: 32px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); transition: transform 0.2s, box-shadow 0.2s; border: 1px solid #eee; }
+        .product-card:hover { transform: translateY(-4px); box-shadow: 0 8px 32px rgba(0,0,0,0.1); }
+        .product-card .icon { font-size: 40px; margin-bottom: 16px; }
+        .product-card h3 { font-size: 20px; font-weight: 700; margin-bottom: 10px; }
+        .product-card p { font-size: 14px; color: #666; line-height: 1.7; margin-bottom: 16px; }
+        .product-card .tag { display: inline-block; background: #f0f0f5; color: #555; font-size: 12px; padding: 4px 12px; border-radius: 20px; margin-right: 6px; margin-bottom: 6px; }
+
+        /* Why Us */
+        .why-us { background: #fff; }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 28px; text-align: center; }
+        .feature h4 { font-size: 18px; font-weight: 700; margin-bottom: 8px; }
+        .feature p { font-size: 14px; color: #777; }
+        .feature .num { font-size: 36px; font-weight: 800; color: #e63946; margin-bottom: 8px; }
+
+        /* Contact */
+        .contact { background: #1a1a2e; color: #fff; }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+        .contact h2 { font-size: 32px; font-weight: 800; margin-bottom: 20px; }
+        .contact p { color: #b0b0c8; margin-bottom: 24px; }
+        .contact-info { list-style: none; }
+        .contact-info li { margin-bottom: 14px; font-size: 15px; }
+        .contact-info strong { color: #fff; display: inline-block; min-width: 80px; }
+        .contact-whatsapp { display: inline-flex; align-items: center; gap: 8px; background: #25D366; color: #fff; padding: 14px 28px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 15px; margin-top: 12px; transition: background 0.2s; }
+        .contact-whatsapp:hover { background: #20bd5a; }
+
+        /* Products detail page */
+        .product-detail { padding: 80px 0; }
+        .product-detail h2 { font-size: 28px; margin-bottom: 24px; }
+        .product-detail ul { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+        .product-detail ul li::before { content: "✅ "; }
+
+        /* Footer */
+        footer { background: #111; color: #888; padding: 32px 0; font-size: 13px; text-align: center; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 32px; }
+            .contact-grid { grid-template-columns: 1fr; }
+            nav a { margin-left: 16px; font-size: 13px; }
+            .products-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="/" class="logo">中能<span>贸易</span></a>
+            <nav>
+                <a href="#products">Products</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <h1>Your Reliable Export Partner<br>from <span>China</span></h1>
+            <p>Liling Zhongneng Trading Co., Ltd. supplies high-quality insulators, LCD displays, porcelain ware, and motorcycle piston rings to global markets. Factory-direct pricing, rigorous quality control.</p>
+            <div class="hero-btns">
+                <a href="#products" class="btn btn-primary">Explore Products</a>
+                <a href="#contact" class="btn btn-outline">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="section" id="products">
+        <div class="container">
+            <h2 class="section-title">Our Products</h2>
+            <p class="section-sub">Four product lines serving diverse industries worldwide</p>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="icon">⚡</div>
+                    <h3>High-Voltage Insulators</h3>
+                    <p>Glass, composite (silicone rubber), and porcelain insulators for power transmission lines, substations, and distribution networks.</p>
+                    <span class="tag">Glass Insulator</span>
+                    <span class="tag">Composite Insulator</span>
+                    <span class="tag">Porcelain Insulator</span>
+                </div>
+                <div class="product-card">
+                    <div class="icon">🖥️</div>
+                    <h3>LCD Display Panels</h3>
+                    <p>TFT LCD panels from 1.44" to 21.5", industrial monitors, and custom display solutions for OEM/ODM clients.</p>
+                    <span class="tag">TFT LCD</span>
+                    <span class="tag">Industrial Monitor</span>
+                    <span class="tag">Custom Display</span>
+                </div>
+                <div class="product-card">
+                    <div class="icon">🏺</div>
+                    <h3>Porcelain &amp; Ceramics</h3>
+                    <p>Fine dinnerware, hotel-grade porcelain, and custom ceramic products for supermarkets, hotels, and distributors.</p>
+                    <span class="tag">Dinnerware</span>
+                    <span class="tag">Hotel Porcelain</span>
+                    <span class="tag">Custom Design</span>
+                </div>
+                <div class="product-card">
+                    <div class="icon">🏍️</div>
+                    <h3>Motorcycle Piston Rings</h3>
+                    <p>High-performance piston rings for motorcycles, compatible with major engine brands. Also supply auto dashcams.</p>
+                    <span class="tag">Piston Rings</span>
+                    <span class="tag">Motorcycle Parts</span>
+                    <span class="tag">Dashcam</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us -->
+    <section class="section why-us" id="about">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us</h2>
+            <p class="section-sub">Built on trust, driven by quality</p>
+            <div class="features">
+                <div class="feature">
+                    <div class="num">10+</div>
+                    <h4>Years Experience</h4>
+                    <p>Deep industry knowledge in export trading across four product categories.</p>
+                </div>
+                <div class="feature">
+                    <div class="num">30+</div>
+                    <h4>Export Countries</h4>
+                    <p>Serving clients across Asia, Europe, Africa, and the Americas.</p>
+                </div>
+                <div class="feature">
+                    <div class="num">100%</div>
+                    <h4>Quality Inspection</h4>
+                    <p>Every shipment undergoes rigorous quality check before dispatch.</p>
+                </div>
+                <div class="feature">
+                    <div class="num">✓</div>
+                    <h4>Factory Direct</h4>
+                    <p>Competitive pricing without middlemen. Flexible MOQ for trial orders.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div>
+                    <h2>Get In Touch</h2>
+                    <p>Ready to source quality products from China? We're here to help. Send us a message and we'll get back to you within 24 hours.</p>
+                    <ul class="contact-info">
+                        <li><strong>Company</strong> Liling Zhongneng Trading Co., Ltd.</li>
+                        <li><strong>Contact</strong> Liao Yuxin</li>
+                        <li><strong>Phone</strong> +86 182-7324-3295</li>
+                        <li><strong>Email</strong> liaoyux1688@hotmail.com</li>
+                        <li><strong>Email</strong> yuxinliao175@gmail.com</li>
+                        <li><strong>Address</strong> Changqing Street, Liling, Hunan, China</li>
+                    </ul>
+                    <a href="https://wa.me/8613714898482" class="contact-whatsapp" target="_blank">💬 WhatsApp: +86 137 1489 8482</a>
+                </div>
+                <div>
+                    <h2>Products We Supply</h2>
+                    <p>Detailed product specifications available upon request. We can provide:</p>
+                    <ul class="contact-info" style="margin-top: 16px;">
+                        <li>✅ Product catalogs with full specifications</li>
+                        <li>✅ Factory test reports &amp; certifications</li>
+                        <li>✅ Free samples for evaluation</li>
+                        <li>✅ Custom OEM/ODM solutions</li>
+                        <li>✅ Competitive FOB/CIF pricing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Liling Zhongneng Trading Co., Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
